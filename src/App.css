@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #6F5E44; /* Taken from logo */
+  --secondary-color: #F2E7D8; /* Neutral beige from logo */
+  --accent-color: #1E1E1E; /* Black accent */
+  --text-color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
