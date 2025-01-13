@@ -18,6 +18,7 @@ const Footer = () => (
             <li><a href="#">Policies</a></li>
             <li><a href="#">FAQs</a></li>
             <li><a href="#">PrivacyPolicy</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
         <div className="footer-social">

@@ -2,18 +2,12 @@ import React from "react";
 import Navbar from "./Navbar"; 
 import Footer from "./Footer";
 import "./AboutUs.css";
-import bannerImage from "../assets/about-banner.jpg";
+import aboutbannerImage from "../assets/about-banner.jpg";
 import aboutTop from "../assets/about-top-image.jpg"; // Replace with actual image path
 import aboutBottom from "../assets/about-bottom-image.jpg"; // Replace with actual image path
 
 const categories = [
-  "Furniture",
-  "Home Decor",
-  "Mattresses",
-  "Sofas & Seatings",
-  "Lamp and Lighting",
-  "Furnishings",
-  "Luxury",
+  "Furniture", "Home Decor", "Mattresses", "Sofas & Seatings", "All Products", "About Us", "FAQs"
 ];
 
 function AboutUs() {
@@ -23,7 +17,7 @@ function AboutUs() {
       <div className="about-us">
         {/* Top Banner Section */}
         <div className="banner">
-          <img src={bannerImage} alt="About Us Banner" className="banner-image" />
+          <img src={aboutbannerImage} alt="About Us Banner" className="about-banner-image" />
           <div className="banner-content">
             <h1>About Us</h1>
             <p>

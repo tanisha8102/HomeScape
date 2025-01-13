@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.banner-image {
+.about-banner-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -295,6 +295,6 @@
     }
 
     .content-image-row .right-image {
-        margin-right: -15vw;
+        margin-right: -10vw;
     }
 }
