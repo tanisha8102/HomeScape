@@ -1,4 +1,3 @@
-// Footer.js
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -13,21 +12,33 @@ const Footer = () => (
         </div>
         <div className="footer-links">
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Policies</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">PrivacyPolicy</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/policies">Policies</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
         <div className="footer-social">
-          <a href="#" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></a>
-          <a href="#" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
-          <a href="#" className="social-icon"><FontAwesomeIcon icon={faTwitter} /></a>
-          <a href="#" className="social-icon"><FontAwesomeIcon icon={faPinterest} /></a>
-          <a href="#" className="social-icon"><FontAwesomeIcon icon={faYoutube} /></a>
-          <a href="#" className="social-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
+          <a href="https://www.facebook.com" className="social-icon" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="https://www.instagram.com" className="social-icon" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://www.twitter.com" className="social-icon" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a href="https://www.pinterest.com" className="social-icon" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faPinterest} />
+          </a>
+          <a href="https://www.youtube.com" className="social-icon" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a href="https://www.linkedin.com" className="social-icon" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
       </div>
       <div className="footer-right">

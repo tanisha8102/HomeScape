@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faShoppingCart, faUser, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart,faCheck } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "./Navbar"; 
 import Footer from "./Footer";
 import images from './Home-page-images';  // Import the image object
@@ -11,27 +11,16 @@ const ProductCard = ({ title, imageSrc, isLarge = false, className = "" }) => (
   <div className={`product-card ${isLarge ? 'large' : 'small'} ${className}`}>
     <div className="text-content">
       <p>{title}</p>
-      <a href="#">MORE+</a>
+      <a href="/">MORE+</a>
     </div>
     <img src={imageSrc} alt={title} className={isLarge ? "product-image-large" : "product-image"} />
   </div>
 );
 
-// Component for displaying categories
-const CategoryList = ({ items }) => (
-  <ul className="nav-list">
-    {items.map(item => (
-      <li key={item}>
-        <a href="#">{item}</a>
-      </li>
-    ))}
-  </ul>
-);
+
 
 // Main HomePage Component
 const HomePage = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen(!menuOpen);
   const [activeTab, setActiveTab] = useState(0);
 
   const categories = [
@@ -153,7 +142,7 @@ const HomePage = () => {
       <section className="square-section">
         <h2 className="section-header">Discover Our Best Products</h2>
         <div className="square left-square">
-          <img src={images.image7} alt="Product Image" className="product-image" />
+          <img src={images.image7} alt="Product" className="product-image" />
           <div className="product-details">
             <h3 className="product-name">PureSpace Luxe Recliner</h3>
             <p className="product-detail">Sleek, elegant for your modern living space</p>
@@ -204,9 +193,9 @@ const HomePage = () => {
         <div className="section-separator"></div>
         <h1 className="section-header">Our Blogs</h1>
         <div className="blogs-grid">
-          {[{ title: "Design Tips for Modern Homes", image: images.blog1, link: "#" },
-            { title: "The Art of Minimalist Furniture", image: images.blog2, link: "#" },
-            { title: "Choosing the Right Sofa", image: images.blog3, link: "#" }].map((blog, index) => (
+          {[{ title: "Design Tips for Modern Homes", image: images.blog1, link: "/" },
+            { title: "The Art of Minimalist Furniture", image: images.blog2, link: "/" },
+            { title: "Choosing the Right Sofa", image: images.blog3, link: "/" }].map((blog, index) => (
               <div className="blog-card" key={index}>
                 <img src={blog.image} alt={blog.title} className="blog-image" />
                 <div className="blog-content">

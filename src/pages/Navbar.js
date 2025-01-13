@@ -11,19 +11,19 @@ const Navbar = ({ categories = [] }) => {
   // Dropdown items for specific categories
   const dropdownItems = {
     Furniture: [
-      { label: "Living Room Furniture", link: "#" },
-      { label: "Office Chairs", link: "#" },
-      { label: "Sofas", link: "#" },
-      { label: "Coffee Tables", link: "#" },
-      { label: "Storage Solutions", link: "#" },
+      { label: "Living Room Furniture", link: "/" },
+      { label: "Office Chairs", link: "/" },
+      { label: "Sofas", link: "/" },
+      { label: "Coffee Tables", link: "/" },
+      { label: "Storage Solutions", link: "/" },
     ],
     "Home Decor": [
-      { label: "Wall Art", link: "#" },
-      { label: "Curtains", link: "#" },
-      { label: "Mirrors", link: "#" },
-      { label: "Clocks", link: "#" },
-      { label: "Rugs", link: "#" },
-      { label: "Throw Pillows", link: "#" },
+      { label: "Wall Art", link: "/" },
+      { label: "Curtains", link: "/" },
+      { label: "Mirrors", link: "/" },
+      { label: "Clocks", link: "/" },
+      { label: "Rugs", link: "/" },
+      { label: "Throw Pillows", link: "/" },
     ],
     // Add dropdown items for other categories as needed
   };
@@ -52,7 +52,7 @@ const Navbar = ({ categories = [] }) => {
                   ? "/product"
                   : item === "FAQs"
                   ? "/faq"
-                  : "#"
+                  : "/"
               }
             >
               {item}

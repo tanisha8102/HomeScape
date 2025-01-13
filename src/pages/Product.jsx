@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Product.css"; // Ensure this file exists and is linked
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from "./Navbar";
 import productbanner1 from "../assets/product-banner.jpeg";
 import productbanner2 from "../assets/product-banner-2.png";
